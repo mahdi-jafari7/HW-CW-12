@@ -24,7 +24,7 @@ class Program
     {
         while (currentUser == null)
         {
-            Console.WriteLine("Welcome to your ToDo List! :)");
+            
             Console.WriteLine("1. Register");
             Console.WriteLine("2. Login");
             int option = int.Parse(Console.ReadLine());
@@ -32,9 +32,12 @@ class Program
             switch (option)
             {
                 case 1:
+                    Console.Clear();
                     Register();
                     break;
                 case 2:
+                    Console.Clear();
+
                     Login();
                     break;
             }
